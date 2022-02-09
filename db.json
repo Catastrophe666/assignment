@@ -1,0 +1,52 @@
+{
+  "registrations": [
+    {
+      "firstName": "adarsh",
+      "lastName": "sharma",
+      "phoneNumber": "78274982984",
+      "country": "india"
+    },
+    {
+      "id": 27,
+      "firstName": "vinod",
+      "lastName": "Sharma",
+      "phoneNumber": "9742792400",
+      "country": "Antigua & Barbuda"
+    },
+    {
+      "id": 76,
+      "firstName": "Adarsh",
+      "lastName": "Sharma",
+      "phoneNumber": "9742792400",
+      "country": "Antigua & Barbuda"
+    },
+    {
+      "id": 8,
+      "firstName": "Adarsh",
+      "lastName": "Sharma",
+      "phoneNumber": "9742792400",
+      "country": "Antigua & Barbuda"
+    },
+    {
+      "id": 41,
+      "firstName": "Adarsh",
+      "lastName": "Sharma",
+      "phoneNumber": "9742792400",
+      "country": "Antigua & Barbuda"
+    },
+    {
+      "id": 67,
+      "firstName": "Adarsh",
+      "lastName": "Sharma",
+      "phoneNumber": "9742792400",
+      "country": "Antigua & Barbuda"
+    },
+    {
+      "id": 92,
+      "firstName": "Adarsh",
+      "lastName": "Sharma",
+      "phoneNumber": "9742792400",
+      "country": "Antigua & Barbuda"
+    }
+  ]
+}
