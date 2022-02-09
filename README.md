@@ -1,6 +1,6 @@
 # Registration Page App
 
-# Steps to run the fibre network
+# Steps to run the Application
 1. Install the dependencies
     `npm i`
 2. Run the Mock backend server 
