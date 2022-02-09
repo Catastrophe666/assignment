@@ -5,7 +5,6 @@ import { useRef, useState }  from "react";
 
 export const AnagramCalculator = () => {
     const [result, setResult] = useState<String>("")
-    const [showResult, setShowResult] = useState<Boolean>(true) 
     const firstWord = useRef<HTMLInputElement>(null);
     const secondWord = useRef<HTMLInputElement>(null);
     const submit = (event: React.FormEvent) => {

@@ -33,7 +33,7 @@ export const RegistrationPage: React.FC<Props> = ({onSubmit}) => {
         onSubmit={async values => {
             try {
                 const response = await axios.post('http://localhost:3000/registrations',{id:Math.floor(Math.random() * 100),...values});
-                if(response.statusText == "Created"){
+                if(response.statusText === "Created"){
                     localStorage.setItem('name', response.data.firstName)
                     history.push('/success');
                 }else{
