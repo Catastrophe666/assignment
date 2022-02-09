@@ -72,7 +72,7 @@ export const RegistrationPage: React.FC<Props> = ({onSubmit}) => {
             handleSubmit,
           } = formikProps;
           return (
-            <div style={{textAlign:"center"}}>
+            <div style={{textAlign:"center", backgroundColor:"white", width: "300px" ,  borderRadius: "10px", margin: "auto", marginTop: "100px", padding: "20px"}}>
                  <h1>Register here</h1>
                 <Form onSubmit={handleSubmit}>
                     <div style={{marginTop:'10px'}}>
@@ -389,7 +389,7 @@ export const RegistrationPage: React.FC<Props> = ({onSubmit}) => {
                             </Select>
                             </FormControl>
                     </div>
-                <Button disabled={errors.firstName || errors.firstName || errors.phoneNumber ? true: false } type="submit"> Submit </Button>
+                <Button style={{backgroundColor:"rgb(128, 181, 246)", color:"white", width:"200px", marginTop:"20px"}} disabled={errors.firstName || errors.firstName || errors.phoneNumber ? true: false } type="submit"> Submit </Button>
                
             </Form>
             </div>

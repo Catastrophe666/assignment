@@ -26,7 +26,7 @@ export const AnagramCalculator = () => {
     }
    
     return(
-        <div style={{textAlign:"center", marginTop:"20px"}}>
+        <div style={{textAlign:"center", backgroundColor:"white", width: "300px" ,  borderRadius: "10px", margin: "auto", marginTop: "100px", padding: "20px"}}>
         <form onSubmit={submit}>
             <div style={{marginTop:"10px"}}>
                 <label htmlFor="first">Enter First Word</label>
