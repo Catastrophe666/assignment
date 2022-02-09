@@ -17,6 +17,12 @@ After these dteps
 - Go to http://localhost:8000/registration registration to register a new user.
 - Go to http://localhost:8000/anagram to check if two numbers are anagram.
 
+For TempTracker Class
+- Go to the tempTrackerClass folder in this project
+    `cd src/tempTrackerClass`
+- Run TempTracker.js file
+    `node TempTracker.js`
+
 
 
 
