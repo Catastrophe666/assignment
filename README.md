@@ -13,7 +13,7 @@
 
 the Json web server runs on http://localhost:3000
 
-After these dteps
+After these steps
 - Go to http://localhost:8000/registration registration to register a new user.
 - Go to http://localhost:8000/anagram to check if two numbers are anagram.
 - Go to http://localhost:8000/temptracker to go to temperature tracker.
