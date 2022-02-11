@@ -62,12 +62,12 @@ export const TempTrack = () => {
                     <div style={{marginTop:"20px"}} >Mean Temperature recorded</div>
                 
                     <div style={{marginTop:"10px"}}>
-                        {mean}
+                        {mean?.toFixed(2)}
                     </div>
                     <div style={{marginTop:"20px"}} >Mode Temperature recorded</div>
                 
                     <div style={{marginTop:"10px"}}>
-                        {mode}
+                        {mode?.toFixed(2)}
                     </div>
                 </div>
             ) :''}
