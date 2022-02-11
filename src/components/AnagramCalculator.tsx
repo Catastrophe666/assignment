@@ -1,8 +1,8 @@
 import { useRef, useState }  from "react";
+import ButtonAppBar from './AppBar';
+import React from "react";
 
-
-
-
+// anagram calculator
 export const AnagramCalculator = () => {
     const [result, setResult] = useState<String>("")
     const firstWord = useRef<HTMLInputElement>(null);
@@ -26,25 +26,28 @@ export const AnagramCalculator = () => {
     }
    
     return(
-        <div style={{textAlign:"center", backgroundColor:"white", width: "300px" ,  borderRadius: "10px", margin: "auto", marginTop: "100px", padding: "20px"}}>
-        <form onSubmit={submit}>
-            <div style={{marginTop:"10px"}}>
-                <label htmlFor="first">Enter First Word</label>
-            </div>
-            <div>
-                <input type="text" id="first" ref={firstWord}></input>
-            </div>
-            <div style={{marginTop:"10px"}}>
-                <label htmlFor="second">Enter Second Word</label>
-            </div>
-            <div>
-                <input type="text" id="second" ref={secondWord}></input>
-            </div>
-            <button style={{marginTop:"10px"}} >Show result</button>
-        </form>
-       
-        <div style={{marginTop:"10px"}}>{result}</div>
+        <React.Fragment>
+            <ButtonAppBar />
+            <div style={{textAlign:"center", backgroundColor:"white", width: "300px" ,  borderRadius: "10px", margin: "auto", marginTop: "100px", padding: "20px"}}>
+            <form onSubmit={submit}>
+                <div style={{marginTop:"10px"}}>
+                    <label htmlFor="first">Enter First Word</label>
+                </div>
+                <div>
+                    <input type="text" id="first" ref={firstWord}></input>
+                </div>
+                <div style={{marginTop:"10px"}}>
+                    <label htmlFor="second">Enter Second Word</label>
+                </div>
+                <div>
+                    <input type="text" id="second" ref={secondWord}></input>
+                </div>
+                <button style={{marginTop:"10px"}} >Show result</button>
+            </form>
         
-        </div>
+            <div style={{marginTop:"10px"}}>{result}</div>
+            
+            </div>
+        </React.Fragment>
     )
 }

@@ -1,4 +1,4 @@
-class TempTracker {
+export class TempTracker {
     temps = [];
 
     constructer(...temps){
@@ -6,7 +6,11 @@ class TempTracker {
     }
 
     insert(temp){
-        this.temps=[temp,...this.temps]
+        this.temps.push(temp)
+    }
+
+    get_temps(){
+        return [...this.temps]
     }
 
     get_max(){
@@ -44,15 +48,3 @@ class TempTracker {
         return Number(highestValueKey)
     }
 }
-
-const temp = new TempTracker();
-temp.insert(34);
-temp.insert(34);
-temp.insert(56);
-temp.insert(12);
-temp.insert(6);
-console.log("Class Object",temp.get_max());
-console.log("Maximun temp",temp.get_max());
-console.log("Minimum temp",temp.get_min());
-console.log("Mean temp",temp.get_mean());
-console.log("Mode temp",temp.get_mode());

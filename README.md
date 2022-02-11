@@ -16,12 +16,11 @@ the Json web server runs on http://localhost:3000
 After these dteps
 - Go to http://localhost:8000/registration registration to register a new user.
 - Go to http://localhost:8000/anagram to check if two numbers are anagram.
+- Go to http://localhost:8000/temptracker to go to temperature tracker.
 
-For TempTracker Class
-- Go to the tempTrackerClass folder in this project
-    `cd src/tempTrackerClass`
-- Run TempTracker.js file
-    `node TempTracker.js`
+For Running Unit tests run the following command on terminal
+`npm test`
+
 
 
 
