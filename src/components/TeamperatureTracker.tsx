@@ -7,7 +7,6 @@ var temp = new TempTracker();
 //temperature tracker
 export const TempTrack = () => {
     const [show, setShow] = useState<boolean>(false)
-    const [clear, setclear] = useState<boolean>(false)
     const [result, setResult] = useState<number[]>([])
     const [max, setMax] = useState<number>()
     const [min, setMin] = useState<number>()
