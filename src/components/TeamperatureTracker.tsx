@@ -13,12 +13,13 @@ export const TempTrack = () => {
     const [min, setMin] = useState<number>()
     const [mean, setMean] = useState<number>()
     const [mode, setMode] = useState<number>()
-    const newtemp = useRef<HTMLInputElement>(null);
+    var newtemp = useRef<HTMLInputElement>(null);
 
     const submit = (event: React.FormEvent) => {
         event.preventDefault();
 
-        temp.insert(Number(newtemp.current?.value));   
+        temp.insert(Number(newtemp.current?.value));  
+        newtemp.current!.value = ''; 
         setResult(temp.get_temps());
         setMax(temp.get_max());
         setMin(temp.get_min());
