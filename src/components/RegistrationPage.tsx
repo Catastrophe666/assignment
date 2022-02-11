@@ -46,6 +46,7 @@ export const RegistrationPage: React.FC<Props> = ({onSubmit}) => {
                 try {
                     const response = await axios.post('http://localhost:3000/registrations',{id:Math.floor(Math.random() * 100),...values});
                     if(response.statusText === "Created"){
+                        console.log(response);
                         localStorage.setItem('name', response.data.firstName)
                         history.push('/success');
                     }else{
@@ -53,7 +54,7 @@ export const RegistrationPage: React.FC<Props> = ({onSubmit}) => {
 
                     }
                 } catch (error) {
-                    console.error(error);
+                    alert("Please check is jason web server is running on port 3000");
                 }
             
             }}
