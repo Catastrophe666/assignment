@@ -31,7 +31,6 @@ export default function ButtonAppBar() {
           <Typography variant="h6"  sx={{ flexGrow: 1 }}>
             <Link style={{ color:"white"}} href="/temptracker">Temp Checker</Link>
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>
