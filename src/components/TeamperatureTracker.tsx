@@ -1,4 +1,4 @@
-import { ReactNode, useRef, useState, useEffect }  from "react";
+import { useRef, useState }  from "react";
 import ButtonAppBar from './AppBar';
 import React from "react";
 import {TempTracker} from "../tempTrackerClass/TempTracker"
@@ -7,13 +7,13 @@ var temp = new TempTracker();
 //temperature tracker
 export const TempTrack = () => {
     const [show, setShow] = useState<boolean>(false)
+    const [clear, setclear] = useState<boolean>(false)
     const [result, setResult] = useState<number[]>([])
     const [max, setMax] = useState<number>()
     const [min, setMin] = useState<number>()
     const [mean, setMean] = useState<number>()
     const [mode, setMode] = useState<number>()
     const newtemp = useRef<HTMLInputElement>(null);
-
 
     const submit = (event: React.FormEvent) => {
         event.preventDefault();
@@ -31,6 +31,7 @@ export const TempTrack = () => {
         <React.Fragment>
             <ButtonAppBar />
             <div style={{textAlign:"center", backgroundColor:"white", width: "300px" ,  borderRadius: "10px", margin: "auto", marginTop: "100px", padding: "20px"}}>
+            <button style={{marginTop:"10px"}} onClick={()=>{window.location.reload()}}>Clear</button>
             <form onSubmit={submit}>
                 <div style={{marginTop:"10px"}}>
                     <label htmlFor="first">Insert new temp</label>
