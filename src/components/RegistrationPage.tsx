@@ -157,7 +157,7 @@ export const RegistrationPage: React.FC<Props> = ({onSubmit}) => {
                                     >
                                          {countrylist.map(function (country:Country) {
                                             return(
-                                                <MenuItem key={country.dial_code} value={country.name}>{country.name}</MenuItem>
+                                                <MenuItem key={country.code} value={country.name}>{country.name}</MenuItem>
                                             );
                                         })}
                                 </Select>
